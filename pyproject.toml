@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "catface"
+version = "0.1.0"
+description = "CLI tool to setup Python projects"
+authors = [{ name = "Paack CO" }]
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.0.0",
+    "cookiecutter>=2.1.0",
+    "rich>=13.9.4",
+    "questionary>=2.0.1",
+]
+
+[project.scripts]
+catface = "catface.cli:main"
