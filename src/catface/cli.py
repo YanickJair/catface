@@ -3,10 +3,11 @@ from pathlib import Path
 
 import click
 import questionary
-from catface import template
 from cookiecutter.main import cookiecutter
 from rich.console import Console
 from rich.panel import Panel
+
+from catface import template
 
 console = Console()
 

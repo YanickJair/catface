@@ -7,7 +7,7 @@ name = "catface"
 version = "0.1.0"
 description = "CLI tool to setup Python projects"
 authors = [{ name = "Paack CO" }]
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
     "click>=8.0.0",
     "cookiecutter>=2.1.0",
