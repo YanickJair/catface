@@ -7,5 +7,6 @@
   "python_version": "3.12",
   "packaging": ["setuptools", "poetry"],
   "include_docker": false,
+  "include_precommit": false,
   "include_mkdocs": false
 }

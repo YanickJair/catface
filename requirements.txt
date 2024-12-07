@@ -2,3 +2,5 @@ click>=8.0.0
 cookiecutter>=2.1.0
 rich>=13.9.4
 questionary>=2.0.1
+ruff>=0.8.2
+pre-commit>=4.0.1
