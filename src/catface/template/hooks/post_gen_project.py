@@ -5,27 +5,12 @@ from pathlib import Path
 import shutil
 
 
-REMOVE_PATHS = [
-    '{% if cookiecutter.packaging != "pip" %} requirements.txt {% endif %}',
-    '{% if cookiecutter.packaging != "poetry" %} poetry.lock {% endif %}',
-]
-
 project_name = "{{ cookiecutter.project_name }}"
 project_description = "{{ cookiecutter.project_description }}"
 
 
-for path in REMOVE_PATHS:
-    path = path.strip()
-    if path and os.path.exists(path):
-        if os.path.isdir(path):
-            os.rmdir(path)
-        else:
-            os.unlink(path)
-
 def remove_docker_file():
     os.remove('Dockerfile')
-    if os.path.exists('docker-compose.yml'):
-        os.remove('docker-compose.yml')
 
 def setup_mkdocs():
     """Set up MkDocs documentation."""
@@ -38,21 +23,11 @@ def setup_mkdocs():
     (docs_dir / 'contributing.md').write_text('# Contributing\n\nGuidelines for contributing to the project.')
 
     # Add mkdocs dependencies to development requirements
-    with open('pyproject.toml', 'a') as f:
-        f.write('\n[tool.poetry.group.docs]\n')
-        f.write('dependencies = [\n')
-        f.write('    "mkdocs>=1.4.0",\n')
-        f.write('    "mkdocs-material>=9.0.0",\n')
-        f.write('    "mkdocstrings>=0.20.0",\n')
-        f.write('    "mkdocstrings-python>=0.9.0"\n')
-        f.write(']\n')
-
-    # Add documentation commands to Makefile
-    with open('Makefile', 'a') as f:
-        f.write('\n.PHONY: docs serve-docs\n\n')
-        f.write('docs:\n\tmkdocs build\n\n')
-        f.write('serve-docs:\n\tmkdocs serve\n')
-
+    with open('requirements.txt', 'a') as f:
+        f.write('mkdocs>=1.4.0\n')
+        f.write('mkdocs-material>=9.0.0\n')
+        f.write('mkdocstrings>=0.20.0\n')
+        f.write('mkdocstrings-python>=0.9.0\n')
 
 def additional_features():
     if "{{ cookiecutter.include_docker }}" != "True":
@@ -86,6 +61,10 @@ def main():
         additional_features()
 
         setup_venv()
+
+        with open('requirements.txt', 'a') as f:
+            f.write('ruff>=0.8.2\n')
+            f.write('fastapi>=0.115.6\n')
 
         print("\n✨ Project setup complete!")
     except Exception as e:

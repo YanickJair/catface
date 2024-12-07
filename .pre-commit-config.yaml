@@ -4,15 +4,21 @@ repos:
     hooks:
       - id: ruff
         args: [--fix]
+        exclude: ^src/.*/template/.*$
       - id: ruff-format
+        exclude: ^src/.*/template/.*$
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
     hooks:
       - id: trailing-whitespace
+        exclude: ^src/.*/template/.*$
       - id: end-of-file-fixer
+        exclude: ^src/.*/template/.*$
       - id: check-yaml
+        exclude: ^src/.*/template/.*$
       - id: check-added-large-files
+        exclude: ^src/.*/template/.*$
       - id: check-toml
 
   - repo: https://github.com/tox-dev/tox-ini-fmt

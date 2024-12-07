@@ -1,4 +1,10 @@
 """Your application entry point"""
+from fastapi import FastAPI
 
-if __name__ == "__main__":
-    print("Hello from catface")
+
+app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
