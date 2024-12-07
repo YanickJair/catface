@@ -6,7 +6,13 @@ build-backend = "setuptools.build_meta"
 name = "catface"
 version = "0.1.0"
 description = "CLI tool to setup Python projects"
-authors = [{ name = "Paack CO" }]
+authors = [{name = "Yanick andrade", email = "yanick.jair.ta@gmail.com"}]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 requires-python = ">=3.11"
 dependencies = [
     "click>=8.0.0",
@@ -16,6 +22,10 @@ dependencies = [
     "pre-commit>=4.0.1",
     "ruff>=0.8.2",
 ]
+
+[project.urls]
+Homepage = "https://github.com/YanickJair/catface"
+Repository = "https://github.com/YanickJair/catface.git"
 
 [project.scripts]
 catface = "catface.cli:main"
