@@ -1,3 +1,4 @@
+import importlib
 import subprocess
 from pathlib import Path
 
@@ -7,9 +8,12 @@ from cookiecutter.main import cookiecutter
 from rich.console import Console
 from rich.panel import Panel
 
-from catface import template
-
 console = Console()
+
+
+def get_template_path():
+    with importlib.resources.path("catface", "template") as template_path:
+        return str(template_path)
 
 
 def validate_project_name(name: str) -> bool:
@@ -52,8 +56,7 @@ def main(project_name: str):
         "include_mkdocs": "Documentation (MKDocs)" in features,
     }
 
-    # Get the appropriate template based on project type
-    template_path = Path(template.__file__).parent
+    template_path = get_template_path()
 
     with console.status("[bold green]Creating project..."):
         # Create project using cookiecutter

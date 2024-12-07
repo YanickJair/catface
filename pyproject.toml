@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "catface"
-version = "0.1.0"
+version = "0.1.1"
 description = "CLI tool to setup Python projects"
 authors = [{name = "Yanick andrade", email = "yanick.jair.ta@gmail.com"}]
 license = {text = "MIT"}
@@ -22,6 +22,14 @@ dependencies = [
     "pre-commit>=4.0.1",
     "ruff>=0.8.2",
 ]
+
+[tool.setuptools.package-data]
+catface = ["template/**/*"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["catface"]
+include-package-data = true
 
 [project.urls]
 Homepage = "https://github.com/YanickJair/catface"
