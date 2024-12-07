@@ -20,11 +20,3 @@ repos:
     hooks:
       - id: tox-ini-fmt
         exclude: ^src/.*/template/.*$
-
-  - repo: local
-    hooks:
-      - id: tox
-        name: tox
-        entry: tox
-        language: system
-        pass_filenames: false
