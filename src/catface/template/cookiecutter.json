@@ -1,0 +1,12 @@
+{
+  "project_name": "my-python-project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "module_name": "{{ cookiecutter.project_slug.lower().replace('-', '_') }}",
+  "project_description": "Python project initializer",
+  "author_name": "Paack",
+  "python_version": "3.12",
+  "packaging": ["setuptools", "poetry"],
+  "include_docker": false,
+  "include_precommit": false,
+  "include_mkdocs": false
+}

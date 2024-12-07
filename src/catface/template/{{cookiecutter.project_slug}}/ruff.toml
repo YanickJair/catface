@@ -1,0 +1,47 @@
+target-version = "py312"
+
+line-length = 88
+indent-width = 4
+
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+    "build",
+    "dist",
+    ".tox",
+    ".mypy_cache",
+    ".hg",
+    "__pypackages__",
+    ".ipynb_checkpoints",
+    ".ruff_cache",
+]
+
+[lint]
+select = ["UP", "C", "E", "F", "W", "B", "I"]
+ignore = [
+    "A003",
+    "S101",
+    "E203",
+    "E501",
+    "B010",
+    "B009",
+    "B008",
+    "E731",
+    "UP007",
+]
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+
+[lint.mccabe]
+max-complexity = 10 # Change the number for your threshold
+
+[lint.pydocstyle]
+convention = "google"
+
+[format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"

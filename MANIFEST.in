@@ -1,0 +1,4 @@
+include src/catface/template/**/*
+include src/catface/template/**/.*
+recursive-exclude * __pycache__
+recursive-exclude * *.py[cod]
