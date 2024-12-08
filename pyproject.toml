@@ -22,6 +22,7 @@ dependencies = [
     "pre-commit>=4.0.1",
     "ruff>=0.8.2",
 ]
+readme = "README.md"
 
 [tool.setuptools.package-data]
 catface = ["template/**/*"]
