@@ -76,5 +76,4 @@ def main(project_name: str):
     console.print(f"\n✨ Successfully created project [bold green]{project_name}[/]!")
     console.print("\nNext steps:")
     console.print("  1. cd", project_name)
-    console.print("  2. pip install -e '.[dev]'")
-    console.print("  3. make test")
+    console.print("  2. tox -e <env_name> or tox")

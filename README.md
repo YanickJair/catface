@@ -1,5 +1,5 @@
 <div align="center">
-<img src="./assets/catface-logo.svg" width="200" height="200" alt="Catface Logo">
+<img src=".https://github.com/YanickJair/catface/blob/main/assets/catface-logo.svg" width="200" height="200" alt="Catface Logo">
 
 # Catface
 </div>
@@ -29,3 +29,19 @@ pip install catface
 
 # Create a new project
 catface my-awesome-project
+```
+
+## Pre-configured Tox file
+
+  - Task automation: Using Tox we can automate repetitive tasks
+  - Test against multiple Python versions
+  - Environment management: Using Tox we can create different environments each with its dependencies
+  - Lint and format code using Ruff
+
+```bash
+# Cd inside your project
+cd my-awesome-project
+
+tox # runs all environments
+tox -e <env_name> # running each environment individually by name
+tox -p all # parallel execution
