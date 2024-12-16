@@ -37,12 +37,12 @@ pip install catface
 catface my-awesome-project
 ```
 
-<h1 align="start">
+<h1 align="center">
   <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/features-prompt.png" alt="catface" width="700px">
   <br>
 </h1>
 
-<h1 align="start">
+<h1 align="center">
   <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/python-version.png" alt="catface" width="700px">
   <br>
 </h1>
