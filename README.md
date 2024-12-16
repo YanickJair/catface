@@ -1,8 +1,14 @@
-<div align="center">
-<img src=".https://github.com/YanickJair/catface/blob/main/assets/catface-logo.svg" width="200" height="200" alt="Catface Logo">
+<h1 align="center">
+  <img src="static/catface-logo.png" alt="httpx" width="200px">
+  <br>
+</h1>
 
-# Catface
-</div>
+<p align="center">
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-_red.svg"></a>
+</p>
+
+`catface` s a Command Line Interface (CLI) tool that helps you create Python projects with best practices built-in. It uses [cookiecutter](https://www.cookiecutter.io/) under the hood to provide project templates that you can customize based on your needs.
+
 
 ## Features
 
