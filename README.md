@@ -38,12 +38,12 @@ catface my-awesome-project
 ```
 
 <h1 align="start">
-  <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/features-prompt.png" alt="catface" width="200px">
+  <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/features-prompt.png" alt="catface" width="700px">
   <br>
 </h1>
 
 <h1 align="start">
-  <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/python-version.png" alt="catface" width="200px">
+  <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/python-version.png" alt="catface" width="700px">
   <br>
 </h1>
 
@@ -51,7 +51,7 @@ catface my-awesome-project
 ## Project structure
 The final project structure is going to be something like this based on the features you choose.
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/done.png" alt="catface" width="200px">
+  <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/done.png" alt="catface" width="700px">
   <br>
 </h1>
 
