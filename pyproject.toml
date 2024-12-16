@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "catface"
-version = "0.1.5"
+version = "0.1.6"
 description = "CLI tool to setup Python projects"
 authors = [{name = "Yanick andrade", email = "yanick.jair.ta@gmail.com"}]
 license = {text = "MIT"}
@@ -28,7 +28,7 @@ readme = "README.md"
 catface = ["template/**/*"]
 
 [tool.setuptools]
-package-dir = {"" = "src"}
+package-dir = {"" = "."}
 packages = ["catface"]
 include-package-data = true
 
