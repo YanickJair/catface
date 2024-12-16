@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="static/catface-logo.png" alt="httpx" width="200px">
+  <img src="static/catface-logo.png" alt="catface" width="200px">
   <br>
 </h1>
 
