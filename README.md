@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="static/catface-logo.png" alt="httpx" width="200px">
+  <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/catface-logo.png" alt="catface" width="200px">
   <br>
 </h1>
 
@@ -37,8 +37,26 @@ pip install catface
 catface my-awesome-project
 ```
 
-## Pre-configured Tox file
+<h1 align="start">
+  <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/features-prompt.png" alt="catface" width="200px">
+  <br>
+</h1>
 
+<h1 align="start">
+  <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/python-version.png" alt="catface" width="200px">
+  <br>
+</h1>
+
+
+## Project structure
+The final project structure is going to be something like this based on the features you choose.
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/YanickJair/catface/main/static/done.png" alt="catface" width="200px">
+  <br>
+</h1>
+
+
+## Pre-configured Tox file
   - Task automation: Using Tox we can automate repetitive tasks
   - Test against multiple Python versions
   - Environment management: Using Tox we can create different environments each with its dependencies
