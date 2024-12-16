@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "catface"
-version = "0.1.4"
+version = "0.1.5"
 description = "CLI tool to setup Python projects"
 authors = [{name = "Yanick andrade", email = "yanick.jair.ta@gmail.com"}]
 license = {text = "MIT"}
