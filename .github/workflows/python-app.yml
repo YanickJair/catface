@@ -31,9 +31,9 @@ jobs:
     - name: Lint with flake8
       run: |
         # Run ruff checks
-        ruff check .
+        ruff check --exclude "catface/template/*" .
         # Format with ruff
-        ruff format --check .
+        ruff format --check --exclude "catface/template/*" .
     - name: Test with pytest
       run: |
         pytest
