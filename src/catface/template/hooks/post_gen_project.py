@@ -65,7 +65,7 @@ def main():
         with open('requirements.txt', 'a') as f:
             f.write('ruff>=0.8.2\n')
             f.write('fastapi>=0.115.6\n')
-
+            f.write('tox>=4.23.2\n')
         print("\n✨ Project setup complete!")
     except Exception as e:
         print(f"⚠️  An error occurred during setup: {e}")
